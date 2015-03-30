@@ -22,6 +22,7 @@
     <artifactId>hbase-junit-rule</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
+    <name>HBase JUnit Rule</name>
     <description>JUnit rule to start a temporary HBase cluster</description>
     <url>https://github.com/charithe/hbase-junit-rule</url>
 
