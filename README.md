@@ -12,7 +12,7 @@ Release are available from Maven Central.
 <dependency>
     <groupId>com.github.charithe</groupId>
     <artifactId>hbase-junit-rule</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
@@ -29,5 +29,14 @@ public void clusterId_notNull() throws IOException {
     try(Connection conn = ConnectionFactory.createConnection(conf)) {
         assertThat(conn.getAdmin().getClusterStatus().getClusterId(), is(notNullValue()));
     }
+}
+```
+
+In cases where using the JUnit rule is infeasible, HBase mini cluster can be used as follows:
+
+```java
+HBaseMiniClusterBooter miniCluster = new HBaseMiniClusterBooter();
+try(Connection conn = ConnectionFactory.createConnection(miniCluster.getHBaseConfiguration()){
+    ...
 }
 ```
