@@ -20,7 +20,7 @@
 
     <groupId>com.github.charithe</groupId>
     <artifactId>hbase-junit-rule</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
 
     <name>HBase JUnit Rule</name>
     <description>JUnit rule to start a temporary HBase cluster</description>
@@ -44,7 +44,8 @@
     <scm>
         <developerConnection>scm:git:ssh://git@github.com/charithe/hbase-junit.git</developerConnection>
         <url>https://github.com/charithe/hbase-junit</url>
-    </scm>
+      <tag>hbase-junit-rule-1.0.2</tag>
+  </scm>
 
     <distributionManagement>
         <snapshotRepository>
