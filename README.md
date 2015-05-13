@@ -12,7 +12,7 @@ Release are available from Maven Central.
 <dependency>
     <groupId>com.github.charithe</groupId>
     <artifactId>hbase-junit-rule</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 

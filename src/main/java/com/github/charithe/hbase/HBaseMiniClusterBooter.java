@@ -61,7 +61,7 @@ public class HBaseMiniClusterBooter {
                 testingUtility.cleanupTestDir();
 
                 LOGGER.info("Starting mini HBase cluster");
-                hbaseCluster = testingUtility.startMiniCluster();
+                hbaseCluster = testingUtility.startMiniHBaseCluster(1,1);
             }
             else{
                 LOGGER.warn("Mini HBase cluster is already started");
